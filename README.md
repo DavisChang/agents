@@ -289,6 +289,23 @@ Modify these elements for your needs:
 - [ ] Update department structure if needed
 - [ ] Customize agent colors for your brand
 
+
+## Cursor Prompt Library
+
+The repository includes a script to build a personal prompt library for [Cursor](https://www.cursor.so/). Run:
+
+```bash
+python3 scripts/build_cursor_prompt_library.py
+```
+
+Import the generated `cursor/prompt_library.json` in Cursor's settings to access all agents across your projects.
+
+Once imported, open the Prompt Library (`Cmd`/`Ctrl`+`Shift`+`L`) and search for an agent by name.
+Selecting it inserts the full system prompt so you can use it anywhere.
+
+For example:
+* **rapid-prototyper** → start a new prototype repo
+* **feedback-synthesizer** → summarize user reviews
 ## 🤝 Contributing
 
 To improve existing agents or suggest new ones:
